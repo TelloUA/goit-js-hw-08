@@ -1,0 +1,39 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    /* будуємо по 3 елементи в рядок відображення */
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-image {
+    max-width: calc(100% - 40px);
+    max-height: calc(100% - 40px);
+}
